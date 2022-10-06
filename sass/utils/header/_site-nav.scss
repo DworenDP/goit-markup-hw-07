@@ -1,0 +1,21 @@
+nav a.active {
+    color: var(--accent-color);
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+
+.site-nav {
+    display: flex;
+    margin-left: 93px;
+}
+
+.nav-item {
+    display: block;
+}
+
+.nav-item + .nav-item {
+    margin-left: 50px;
+}

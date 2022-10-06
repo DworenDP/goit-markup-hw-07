@@ -1,0 +1,60 @@
+.sec-padding-bottom-0 {
+    padding-bottom: 0;
+}
+
+.advertising {
+    display: flex;
+}
+
+.adv-list + .adv-list {
+    margin-left: 30px;
+}
+
+.adv-wrap {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 270px;
+    height: 120px;
+
+    background-color: var(--portfolio-button-color);
+    background-repeat: no-repeat;
+
+    margin-bottom: 30px;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+
+    margin: -1px;
+}
+
+.adv-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--main-text-color);
+
+    padding-bottom: 26px;
+}
+
+.adv-content {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color: var(--second-text-color);
+}

@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            http-equiv="X-UA-Compatible"
+            content="IE=edge"
+        />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <link
+            rel="preconnect"
+            href="https://fonts.googleapis.com"
+        />
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+            rel="stylesheet"
+        />
+        <title>WebStudio</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="./styles/styles.css"
+        />
+    </head>
+
+    <body>
+        <!-- site header -->
+        <header class="header">
+            <div class="container header-box">
+                <nav class="main-nav">
+                    <!-- company logo -->
+                    <a
+                        href="./index.html"
+                        class="logo link logo-box"
+                        lang="en"
+                        >Web<span class="logo-item">Studio</span></a
+                    >
+
+                    <!-- list of site links -->
+                    <ul class="site-nav">
+                        <li class="nav-item">
+                            <a
+                                href="./index.html"
+                                class="nav-link link active"
+                                >Студія</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                href="./portfolio.html"
+                                class="nav-link link"
+                                >Портфоліо</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                href="./contacts.html"
+                                class="nav-link link"
+                                >Контакти</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- a list of company contacts -->
+                <ul class="contact-box">
+                    <li class="contact-item">
+                        <a
+                            class="contact-link link"
+                            href="mailto:info@devstudio.com"
+                            target="_blank"
+                            rel="noopener noreferrer nofollow"
+                            ><svg
+                                viewBox
+                                width="16"
+                                height="12"
+                                class="icon shape-codepen contact-icon"
+                            >
+                                <use
+                                    href="./images/icons.svg#icon-mail"
+                                ></use></svg
+                            >info@devstudio.com</a
+                        >
+                    </li>
+                    <li class="contact-item">
+                        <a
+                            class="contact-link link"
+                            href="tel:+380961111111"
+                            ><svg
+                                viewBox
+                                width="10"
+                                height="16"
+                                class="icon shape-codepen contact-icon"
+                            >
+                                <use
+                                    href="./images/icons.svg#icon-smartphone"
+                                ></use></svg
+                            >+38 096 111 11 11</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <main>
+            <!-- Hero section -->
+            <section class="hero">
+                <div class="container">
+                    <h1 class="hero-title">
+                        Ефективні рішення для вашого бізнесу
+                    </h1>
+                    <button
+                        type="button"
+                        class="hero-btn"
+                        data-modal-open
+                    >
+                        Замовити послугу
+                    </button>
+                </div>
+
+                <!-- modal-window -->
+                <div
+                    class="backdrop is-hidden"
+                    data-modal
+                >
+                    <div class="modal">
+                        <button
+                            class="close-btn"
+                            data-modal-close
+                        >
+                            <svg
+                                viewBox
+                                width="11"
+                                height="11"
+                                class="icon shape-codepen close-img"
+                            >
+                                <use href="./images/icons.svg#icon-close"></use>
+                            </svg>
+                        </button>
+                        <h2 class="modal-title">
+                            Залиште свої дані, ми вам передзвонимо
+                        </h2>
+                        <form class="form">
+                            <ul class="form-list">
+                                <li class="form-item">
+                                    <label
+                                        for="name"
+                                        class="form-label"
+                                        >Ім'я</label
+                                    >
+                                    <div class="form-wrap">
+                                        <input
+                                            class="form-input"
+                                            type="text"
+                                            name="name"
+                                            id="name"
+                                            required
+                                        />
+                                        <svg
+                                            viewBox
+                                            width="12"
+                                            height="12"
+                                            class="icon shape-codepen modal-ico"
+                                        >
+                                            <use
+                                                href="./images/icons.svg#icon-name"
+                                            ></use>
+                                        </svg>
+                                    </div>
+                                </li>
+                                <li class="form-item">
+                                    <label
+                                        for="tel"
+                                        class="form-label"
+                                        >Телефон</label
+                                    >
+                                    <div class="form-wrap">
+                                        <input
+                                            class="form-input"
+                                            type="tel"
+                                            name="tel"
+                                            id="tel"
+                                            required
+                                        />
+                                        <svg
+                                            viewBox
+                                            width="14"
+                                            height="14"
+                                            class="icon shape-codepen modal-ico"
+                                        >
+                                            <use
+                                                href="./images/icons.svg#icon-phone"
+                                            ></use>
+                                        </svg>
+                                    </div>
+                                </li>
+                                <li class="form-item">
+                                    <label
+                                        for="mail"
+                                        class="form-label"
+                                        >Пошта</label
+                                    >
+                                    <div class="form-wrap">
+                                        <input
+                                            class="form-input"
+                                            type="email"
+                                            name="mail"
+                                            id="mail"
+                                            required
+                                        />
+                                        <svg
+                                            viewBox
+                                            width="16"
+                                            height="12"
+                                            class="icon shape-codepen modal-ico"
+                                        >
+                                            <use
+                                                href="./images/icons.svg#icon-email"
+                                            ></use>
+                                        </svg>
+                                    </div>
+                                </li>
+                                <li class="form-item">
+                                    <label
+                                        for="comment"
+                                        class="form-label"
+                                        >Коментар</label
+                                    >
+                                    <textarea
+                                        class="form-input form-comment"
+                                        name="comment"
+                                        id="comment"
+                                        rows="10"
+                                        placeholder="Введіть текст"
+                                    ></textarea>
+                                </li>
+                                <li class="submit">
+                                    <input
+                                        type="checkbox"
+                                        name="topic"
+                                        value="submit"
+                                        id="submit"
+                                        class="visually-hidden"
+                                        required
+                                    />
+                                    <label
+                                        for="submit"
+                                        class="submit-item"
+                                    >
+                                        <div class="checkbox">
+                                            <svg
+                                                viewBox
+                                                width="11"
+                                                height="8"
+                                                class="icon shape-codepen"
+                                            >
+                                                <use
+                                                    href="./images/icons.svg#icon-tick"
+                                                ></use>
+                                            </svg>
+                                        </div>
+                                        Погоджуюся з розсилкою та приймаю
+                                    </label>
+                                    <a
+                                        href=""
+                                        class="modal-link"
+                                        >Умови договору</a
+                                    >
+                                </li>
+                            </ul>
+                            <button
+                                type="submit"
+                                class="modal-submit"
+                            >
+                                Відправити
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <!-- advertising text -->
+            <section class="section sec-padding-bottom-0">
+                <div class="container">
+                    <h2 class="visually-hidden">Наші переваги</h2>
+                    <ul class="advertising">
+                        <li class="adv-list">
+                            <div class="adv-wrap icon-sat">
+                                <svg
+                                    viewBox
+                                    width="70"
+                                    height="70"
+                                    class="icon shape-codepen"
+                                >
+                                    <use
+                                        href="./images/icons.svg#icon-satellite"
+                                    ></use>
+                                </svg>
+                            </div>
+                            <h3 class="adv-title">УВАГА ДО ДЕТАЛЕЙ</h3>
+                            <p class="adv-content">
+                                Ідейні міркування, і навіть початок повсякденної
+                                роботи з формування позиції.
+                            </p>
+                        </li>
+                        <li class="adv-list">
+                            <div class="adv-wrap icon-clock">
+                                <svg
+                                    viewBox
+                                    width="70"
+                                    height="70"
+                                    class="icon shape-codepen"
+                                >
+                                    <use
+                                        href="./images/icons.svg#icon-clock"
+                                    ></use>
+                                </svg>
+                            </div>
+                            <h3 class="adv-title">ПУНКТУАЛЬНІСТЬ</h3>
+                            <p class="adv-content">
+                                Завдання організації, особливо рамки і місце
+                                навчання кадрів тягне у себе.
+                            </p>
+                        </li>
+                        <li class="adv-list">
+                            <div class="adv-wrap icon-diag">
+                                <svg
+                                    viewBox
+                                    width="70"
+                                    height="70"
+                                    class="icon shape-codepen"
+                                >
+                                    <use
+                                        href="./images/icons.svg#icon-laptop"
+                                    ></use>
+                                </svg>
+                            </div>
+                            <h3 class="adv-title">ПЛАНУВАННЯ</h3>
+                            <p class="adv-content">
+                                Так само консультація з широким активом значною
+                                мірою зумовлює.
+                            </p>
+                        </li>
+                        <li class="adv-list">
+                            <div class="adv-wrap icon-astronaut">
+                                <svg
+                                    viewBox
+                                    width="70"
+                                    height="70"
+                                    class="icon shape-codepen"
+                                >
+                                    <use
+                                        href="./images/icons.svg#icon-astronaut"
+                                    ></use>
+                                </svg>
+                            </div>
+                            <h3 class="adv-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+                            <p class="adv-content">
+                                Значимість цих проблем настільки очевидна, що
+                                реалізація планових завдань.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- advertising photo -->
+            <section class="section">
+                <div class="container">
+                    <h2 class="section-title">Чим ми займаємося</h2>
+                    <ul class="photo-list">
+                        <li class="photo-item">
+                            <img
+                                src="./images/advphoto/1.jpg"
+                                alt="advertising photo 1"
+                                width="370"
+                                height="294"
+                            />
+                            <div class="photo-text">
+                                <p class="text-item">Десктопні додатки</p>
+                            </div>
+                        </li>
+                        <li class="photo-item">
+                            <img
+                                src="./images/advphoto/2.jpg"
+                                alt="advertising photo 2"
+                                width="370"
+                                height="294"
+                            />
+                            <div class="photo-text">
+                                <p class="text-item">Мобільні додатки</p>
+                            </div>
+                        </li>
+                        <li class="photo-item">
+                            <img
+                                src="./images/advphoto/3.jpg"
+                                alt="advertising photo 3"
+                                width="370"
+                                height="294"
+                            />
+                            <div class="photo-text">
+                                <p class="text-item">Дизайнерські рішення</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- photos of team members -->
+            <section class="section team-section">
+                <div class="container">
+                    <h2 class="section-title">Наша команда</h2>
+                    <ul class="team-list">
+                        <li class="team-photo">
+                            <img
+                                src="./images/team-photo/igor-photo.jpg"
+                                alt="Product Designer photo"
+                                width="270"
+                                height="260"
+                            />
+                            <div class="team-card">
+                                <h3 class="teammate-title">Ігор Дем'яненко</h3>
+                                <p
+                                    lang="en"
+                                    class="team-profession"
+                                >
+                                    Product Designer
+                                </p>
+                                <ul class="social-list">
+                                    <li class="social-item">
+                                        <a
+                                            class="social-ico"
+                                            href=""
+                                            ><svg
+                                                viewBox
+                                                width="20"
+                                                height="20"
+                                                class="icon shape-codepen"
+                                            >
+                                                <use
+                                                    href="./images/icons.svg#icon-instagram"
+                                                ></use></svg
+                                        ></a>
+                                    </li>
+                                    <li class="social-item">
+                                        <a
+                                            class="social-ico"
+                                            href=""
+                                            ><svg
+                                                viewBox
+                                                width="20"
+                                                height="20"
+                                                class="icon shape-codepen"
+                                            >
+                                                <use
+                                                    href="./images/icons.svg#icon-twitter"
+                                                ></use></svg
+                                        ></a>
+                                    </li>
+                                    <li class="social-item">
+                                        <a
+                                            class="social-ico"
+                                            href=""
+                                            ><svg
+                                                viewBox
+                                                width="20"
+                                                height="20"
+                                                class="icon shape-codepen"
+                                            >
+                                                <use
+                                                    href="./images/icons.svg#icon-facebook"
+                                                ></use></svg
+                                        ></a>
+                                    </li>
+                                    <li class="social-item">
+                                        <a
+                                            class="social-ico"
+                                            href=""
+                                            ><svg
+                                                viewBox
+                                                width="20"
+                                                height="20"
+                                                class="icon shape-codepen"
+                                            >
+                                                <use
+                                                    href="./images/icons.svg#icon-linkedin"
+                                                ></use></svg
+                                        ></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="team-photo">
+                            <img
+                                src="./images/team-photo/olga-photo.jpg"
+                                alt="Frontend Developer photo"
+                                width="270"
+                                height="260"
+                            />
+                            <div class="team-card">
+                                <h3 class="teammate-title">Ольга Рєпіна</h3>
+                                <p
+                                    lang="en"
+                                    class="team-profession"
+                                >
+                                    Frontend Developer
+                                </p>
+                                <ul class="social-list">
+                                    <li class="social-item">
+                                        <a
+                                            class="social-ico"
+                                            href=""
+                                            ><svg
+                                                viewBox
+                                                width="20"
+                                                height="20"
+                                                class="icon shape-codepen"
+                                            >
+                                                <use
+                                                    href="./images/icons.svg#icon-instagram"
+                                                ></use></svg
+                                        ></a>
+                                    </li>
+                                    <li class="social-item">
+                                        <a
+                                            class="social-ico"
+                                            href=""
+                                            ><svg
+                                                viewBox
+                                                width="20"
+                                                height="20"
+                                                class="icon shape-codepen"
+                                            >
+                                                <use
+                                                    href="./images/icons.svg#icon-twitter"
+                                                ></use></svg
+                                        ></a>
+                                    </li>
+                                    <li class="social-item">
+                                        <a
+                                            class="social-ico"
+                                            href=""
+                                            ><svg
+                                                viewBox
+                                                width="20"
+                                                height="20"
+                                                class="icon shape-codepen"
+                                            >
+                                                <use
+                                                    href="./images/icons.svg#icon-facebook"
+                                                ></use></svg
+                                        ></a>
+                                    </li>
+                                    <li class="social-item">
+                                        <a
+                                            class="social-ico"
+                                            href=""
+                                            ><svg
+                                                viewBox
+                                                width="20"
+                                                height="20"
+                                                class="icon shape-codepen"
+                                            >
+                                                <use
+                                                    href="./images/icons.svg#icon-linkedin"
+                                                ></use></svg
+                                        ></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="team-photo">
+                            <img
+                                src="./images/team-photo/mikola-photo.jpg"
+                                alt="Marketing photo"
+                                width="270"
+                                height="260"
+                            />
+                            <div class="team-card">
+                                <h3 class="teammate-title">Микола Тарасов</h3>
+                                <p
+                                    lang="en"
+                                    class="team-profession"
+                                >
+                                    Marketing
+                                </p>
+                                <ul class="social-list">
+                                    <li class="social-item">
+                                        <a
+                                            class="social-ico"
+                                            href=""
+                                            ><svg
+                                                viewBox
+                                                width="20"
+                                                height="20"
+                                                class="icon shape-codepen"
+                                            >
+                                                <use
+                                                    href="./images/icons.svg#icon-instagram"
+                                                ></use></svg
+                                        ></a>
+                                    </li>
+                                    <li class="social-item">
+                                        <a
+                                            class="social-ico"
+                                            href=""
+                                            ><svg
+                                                viewBox
+                                                width="20"
+                                                height="20"
+                                                class="icon shape-codepen"
+                                            >
+                                                <use
+                                                    href="./images/icons.svg#icon-twitter"
+                                                ></use></svg
+                                        ></a>
+                                    </li>
+                                    <li class="social-item">
+                                        <a
+                                            class="social-ico"
+                                            href=""
+                                            ><svg
+                                                viewBox
+                                                width="20"
+                                                height="20"
+                                                class="icon shape-codepen"
+                                            >
+                                                <use
+                                                    href="./images/icons.svg#icon-facebook"
+                                                ></use></svg
+                                        ></a>
+                                    </li>
+                                    <li class="social-item">
+                                        <a
+                                            class="social-ico"
+                                            href=""
+                                            ><svg
+                                                viewBox
+                                                width="20"
+                                                height="20"
+                                                class="icon shape-codepen"
+                                            >
+                                                <use
+                                                    href="./images/icons.svg#icon-linkedin"
+                                                ></use></svg
+                                        ></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="team-photo">
+                            <img
+                                src="./images/team-photo/mihail-photo.jpg"
+                                alt="UI Designer photo"
+                                width="270"
+                                height="260"
+                            />
+                            <div class="team-card">
+                                <h3 class="teammate-title">Михайло Єрмаков</h3>
+                                <p
+                                    lang="en"
+                                    class="team-profession"
+                                >
+                                    UI Designer
+                                </p>
+                                <ul class="social-list">
+                                    <li class="social-item">
+                                        <a
+                                            class="social-ico"
+                                            href=""
+                                            ><svg
+                                                viewBox
+                                                width="20"
+                                                height="20"
+                                                class="icon shape-codepen"
+                                            >
+                                                <use
+                                                    href="./images/icons.svg#icon-instagram"
+                                                ></use></svg
+                                        ></a>
+                                    </li>
+                                    <li class="social-item">
+                                        <a
+                                            class="social-ico"
+                                            href=""
+                                            ><svg
+                                                viewBox
+                                                width="20"
+                                                height="20"
+                                                class="icon shape-codepen"
+                                            >
+                                                <use
+                                                    href="./images/icons.svg#icon-twitter"
+                                                ></use></svg
+                                        ></a>
+                                    </li>
+                                    <li class="social-item">
+                                        <a
+                                            class="social-ico"
+                                            href=""
+                                            ><svg
+                                                viewBox
+                                                width="20"
+                                                height="20"
+                                                class="icon shape-codepen"
+                                            >
+                                                <use
+                                                    href="./images/icons.svg#icon-facebook"
+                                                ></use></svg
+                                        ></a>
+                                    </li>
+                                    <li class="social-item">
+                                        <a
+                                            class="social-ico"
+                                            href=""
+                                            ><svg
+                                                viewBox
+                                                width="20"
+                                                height="20"
+                                                class="icon shape-codepen"
+                                            >
+                                                <use
+                                                    href="./images/icons.svg#icon-linkedin"
+                                                ></use></svg
+                                        ></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- client section -->
+            <section class="section">
+                <div class="container">
+                    <h2 class="section-title">Постійні клієнти</h2>
+                    <ul class="client-list">
+                        <li class="client-item">
+                            <a
+                                class="client-link"
+                                href=""
+                                ><svg
+                                    viewBox
+                                    width="106"
+                                    height="60"
+                                    class="icon shape-codepen"
+                                >
+                                    <use
+                                        href="./images/icons.svg#icon-group"
+                                    ></use></svg
+                            ></a>
+                        </li>
+                        <li>
+                            <a
+                                class="client-link"
+                                href=""
+                                ><svg
+                                    viewBox
+                                    width="106"
+                                    height="60"
+                                    class="icon shape-codepen"
+                                >
+                                    <use
+                                        href="./images/icons.svg#icon-group-2"
+                                    ></use></svg
+                            ></a>
+                        </li>
+                        <li>
+                            <a
+                                class="client-link"
+                                href=""
+                                ><svg
+                                    viewBox
+                                    width="106"
+                                    height="60"
+                                    class="icon shape-codepen"
+                                >
+                                    <use
+                                        href="./images/icons.svg#icon-group-3"
+                                    ></use></svg
+                            ></a>
+                        </li>
+                        <li>
+                            <a
+                                class="client-link"
+                                href=""
+                                ><svg
+                                    viewBox
+                                    width="106"
+                                    height="60"
+                                    class="icon shape-codepen"
+                                >
+                                    <use
+                                        href="./images/icons.svg#icon-group-4"
+                                    ></use></svg
+                            ></a>
+                        </li>
+                        <li>
+                            <a
+                                class="client-link"
+                                href=""
+                                ><svg
+                                    viewBox
+                                    width="106"
+                                    height="60"
+                                    class="icon shape-codepen"
+                                >
+                                    <use
+                                        href="./images/icons.svg#icon-group-5"
+                                    ></use></svg
+                            ></a>
+                        </li>
+                        <li>
+                            <a
+                                class="client-link"
+                                href=""
+                                ><svg
+                                    viewBox
+                                    width="106"
+                                    height="60"
+                                    class="icon shape-codepen"
+                                >
+                                    <use
+                                        href="./images/icons.svg#icon-group-6"
+                                    ></use></svg
+                            ></a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <!-- footer, address and contacts  -->
+        <footer class="footer">
+            <div class="container footer-wrapper">
+                <div class="logo-info">
+                    <a
+                        href="./index.html"
+                        class="logo link"
+                        lang="en"
+                        >Web<span class="footer-logo">Studio</span></a
+                    >
+
+                    <address class="address">
+                        <ul class="address-list">
+                            <li>
+                                <a
+                                    class="address-link link"
+                                    href="https://goo.gl/maps/XYVUcAoSv2epRwpU8"
+                                    target="_blank"
+                                    rel="noopener noreferrer nofollow"
+                                    >м. Київ, пр-т Лесі Українки, 26</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="footer-link link"
+                                    href="mailto:info@devstudio.com"
+                                    target="_blank"
+                                    rel="noopener noreferrer nofollow"
+                                    >info@devstudio.com</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="footer-link link"
+                                    href="tel:+380961111111"
+                                    >+38 096 111 11 11</a
+                                >
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+                <div class="footer-social">
+                    <p class="social-text">приєднуйтесь</p>
+                    <ul class="social-list footer-list">
+                        <li class="social-item">
+                            <a
+                                class="social-ico footer-ico"
+                                href=""
+                                ><svg
+                                    viewBox
+                                    width="20"
+                                    height="20"
+                                    class="icon shape-codepen"
+                                >
+                                    <use
+                                        href="./images/icons.svg#icon-instagram"
+                                    ></use></svg
+                            ></a>
+                        </li>
+                        <li class="social-item">
+                            <a
+                                class="social-ico footer-ico"
+                                href=""
+                                ><svg
+                                    viewBox
+                                    width="20"
+                                    height="20"
+                                    class="icon shape-codepen"
+                                >
+                                    <use
+                                        href="./images/icons.svg#icon-twitter"
+                                    ></use></svg
+                            ></a>
+                        </li>
+                        <li class="social-item">
+                            <a
+                                class="social-ico footer-ico"
+                                href=""
+                                ><svg
+                                    viewBox
+                                    width="20"
+                                    height="20"
+                                    class="icon shape-codepen"
+                                >
+                                    <use
+                                        href="./images/icons.svg#icon-facebook"
+                                    ></use></svg
+                            ></a>
+                        </li>
+                        <li class="social-item">
+                            <a
+                                class="social-ico footer-ico"
+                                href=""
+                                ><svg
+                                    viewBox
+                                    width="20"
+                                    height="20"
+                                    class="icon shape-codepen"
+                                >
+                                    <use
+                                        href="./images/icons.svg#icon-linkedin"
+                                    ></use></svg
+                            ></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-mail">
+                    <form class="footer-form">
+                        <ul class="footer-signup">
+                            <li>
+                                <label
+                                    for="mail"
+                                    class="footer-mail-label"
+                                    >Підпишіться на розсилку</label
+                                >
+                            </li>
+                            <li>
+                                <ul class="input-mail">
+                                    <li>
+                                        <input
+                                            class="footer-mail-input"
+                                            type="email"
+                                            name="mail"
+                                            id="footmail"
+                                            placeholder="E-mail"
+                                        />
+                                    </li>
+                                    <li>
+                                        <button
+                                            type="submit"
+                                            class="footer-mail-btn"
+                                        >
+                                            Підписатися
+                                        </button>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </footer>
+        <script src="./js/modal.js"></script>
+    </body>
+</html>

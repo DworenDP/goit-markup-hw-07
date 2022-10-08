@@ -85,6 +85,36 @@
     color: var(--main-text-color);
 }
 
+.modal__submit {
+    display: block;
+
+    padding: 10px 52px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 2.38;
+    letter-spacing: 0.06em;
+
+    border: none;
+    cursor: pointer;
+    color: var(--second-logo-color);
+    background-color: var(--accent-color);
+    border-radius: var(--main-border-radius);
+
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__submit:hover,
+.modal__submit:focus,
+.modal__submit:active {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background-color: var(--big-btn-hover-color);
+}
+
 .form__item {
     display: flex;
     flex-direction: column;
@@ -116,7 +146,7 @@
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal__ico {
+.form__ico {
     position: absolute;
     top: 50%;
     left: 12px;
@@ -144,6 +174,11 @@
     outline: none;
 }
 
+.submit {
+    display: flex;
+    align-items: center;
+}
+
 .submit__item {
     display: flex;
     align-items: center;
@@ -155,41 +190,6 @@
     letter-spacing: 0.03em;
 
     color: var(--second-text-color);
-}
-
-.modal__submit {
-    display: block;
-
-    padding: 10px 52px;
-    margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
-
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 2.38;
-    letter-spacing: 0.06em;
-
-    border: none;
-    cursor: pointer;
-    color: var(--second-logo-color);
-    background-color: var(--accent-color);
-    border-radius: var(--main-border-radius);
-
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal__submit:hover,
-.modal__submit:focus,
-.modal__submit:active {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    background-color: var(--big-btn-hover-color);
-}
-
-.submit {
-    display: flex;
-    align-items: center;
 }
 
 .submit__link {

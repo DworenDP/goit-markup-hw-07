@@ -1,17 +1,17 @@
-.contact-box {
+.contacts {
     display: flex;
     margin-left: auto;
 }
 
-.contact-item {
+.contacts__item {
     display: block;
 }
 
-.contact-item + .contact-item {
+.contacts__item + .contacts__item {
     margin-left: 50px;
 }
 
-.contact-link {
+.contacts__link {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -24,16 +24,16 @@
     letter-spacing: 0.02em;
 }
 
-.contact-link:hover svg {
+.contacts__link:hover svg {
     fill: var(--accent-color);
 }
 
-.contact-link {
+.contacts__link {
     display: flex;
     align-items: center;
 }
 
-.contact-icon {
+.contacts__icon {
     margin-right: 10px;
     fill: currentColor;
 }

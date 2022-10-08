@@ -8,6 +8,10 @@
     color: var(--accent-color);
 }
 
-.logo-item {
+.logo__item {
     color: var(--second-accent-color);
+}
+
+.logo__item--inverse {
+    color: var(--second-logo-color);
 }

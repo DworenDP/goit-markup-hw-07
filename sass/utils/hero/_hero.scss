@@ -10,47 +10,47 @@
         url(../images/hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-}
 
-.hero__title {
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
+    &__title {
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
 
-    color: var(--second-logo-color);
+        color: var(--second-logo-color);
 
-    margin: 0 auto;
-    margin-bottom: 30px;
-    max-width: 696px;
-}
+        margin: 0 auto;
+        margin-bottom: 30px;
+        max-width: 696px;
+    }
 
-.hero__btn {
-    font-family: inherit;
-    background-color: var(--accent-color);
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    text-align: center;
-    letter-spacing: 0.06em;
+    &__btn {
+        font-family: inherit;
+        background-color: var(--accent-color);
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.88;
+        text-align: center;
+        letter-spacing: 0.06em;
 
-    color: var(--second-logo-color);
+        color: var(--second-logo-color);
 
-    display: block;
-    margin: 0 auto;
-    padding: 10px 32px;
-    border-radius: var(--main-border-radius);
-    border: none;
-    cursor: pointer;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        display: block;
+        margin: 0 auto;
+        padding: 10px 32px;
+        border-radius: var(--main-border-radius);
+        border: none;
+        cursor: pointer;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
 
-.hero__btn:hover,
-.hero__btn:focus,
-.hero__btn:active {
-    background-color: var(--big-btn-hover-color);
+    &__btn:hover,
+    &__btn:focus,
+    &__btn:active {
+        background-color: var(--big-btn-hover-color);
+    }
 }

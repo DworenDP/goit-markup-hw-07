@@ -6,12 +6,12 @@
     letter-spacing: 0.03em;
 
     color: var(--accent-color);
-}
 
-.logo__item {
-    color: var(--second-accent-color);
-}
+    &__item {
+        color: var(--second-accent-color);
+    }
 
-.logo__item--inverse {
-    color: var(--second-logo-color);
+    &__item--inverse {
+        color: var(--second-logo-color);
+    }
 }

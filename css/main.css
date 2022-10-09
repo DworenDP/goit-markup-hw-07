@@ -715,7 +715,7 @@ textarea {
   background: var(--accent-color);
 }
 
-.client-list {
+.clients {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -724,7 +724,7 @@ textarea {
           justify-content: space-between;
 }
 
-.client-link {
+.client__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -743,9 +743,9 @@ textarea {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client-link:hover,
-.client-link:active,
-.client-link:focus {
+.client__link:hover,
+.client__link:active,
+.client__link:focus {
   fill: var(--accent-color);
   border: 1px solid var(--accent-color);
 }

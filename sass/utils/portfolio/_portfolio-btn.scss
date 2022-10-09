@@ -1,14 +1,14 @@
-.list-btn {
+.btn-box {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
 }
 
-.btn-item + .btn-item {
+.btn-box__item + .btn-box__item {
     margin-left: 8px;
 }
 
-.portfolio-btn {
+.btn-box__button {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -30,9 +30,9 @@
         color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-btn:hover,
-.portfolio-btn:focus,
-.portfolio-btn:active {
+.btn-box__button:hover,
+.btn-box__button:focus,
+.btn-box__button:active {
     color: var(--second-logo-color);
     background-color: var(--accent-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),

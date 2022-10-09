@@ -1,4 +1,4 @@
-.sec-padding-bottom-0 {
+.section__padding-bottom-0 {
     padding-bottom: 0;
 }
 
@@ -6,11 +6,11 @@
     display: flex;
 }
 
-.adv-list + .adv-list {
+.advertising__list + .advertising__list {
     margin-left: 30px;
 }
 
-.adv-wrap {
+.advertising__wrap {
     display: flex;
 
     justify-content: center;
@@ -39,7 +39,7 @@
     margin: -1px;
 }
 
-.adv-title {
+.advertising__title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -51,7 +51,7 @@
     padding-bottom: 26px;
 }
 
-.adv-content {
+.advertising__content {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;

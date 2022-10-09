@@ -1,13 +1,13 @@
-.team-section {
+.section--repainted {
     background-color: var(--portfolio-button-color);
 }
 
-.team-list {
+.teammate {
     display: flex;
     gap: 30px;
 }
 
-.team-photo {
+.teammate__item {
     background-color: var(--second-logo-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -15,12 +15,12 @@
     flex-basis: calc(100% / 4 - 30px);
 }
 
-.team-card {
+.teammate__card {
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
-.teammate-title {
+.teammate__name {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -29,7 +29,7 @@
     margin-bottom: 10px;
 }
 
-.team-profession {
+.teammate__profession {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
@@ -40,12 +40,12 @@
     margin-bottom: 16px;
 }
 
-.social-list {
+.social {
     display: flex;
     margin-left: 32px;
 }
 
-.social-ico {
+.social__ico {
     display: flex;
     width: 44px;
     height: 44px;
@@ -61,13 +61,13 @@
         fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-item + .social-item {
+.social__item + .social__item {
     margin-left: 10px;
 }
 
-.social-ico:hover,
-.social-ico:active,
-.social-ico:focus {
+.social__ico:hover,
+.social__ico:active,
+.social__ico:focus {
     fill: var(--second-logo-color);
     background: var(--accent-color);
 }

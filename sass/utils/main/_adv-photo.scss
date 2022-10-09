@@ -1,26 +1,14 @@
 .adv-photo {
-    padding-top: 94px;
-}
-
-.photo-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
-}
-
-.photo-list {
     display: flex;
     gap: 30px;
 }
 
-.photo-item {
+.adv-photo__item {
     flex-basis: calc(100% / 3 - 30px);
     position: relative;
 }
 
-.photo-text {
+.adv-photo__box {
     display: flex;
     position: absolute;
     width: 370px;
@@ -35,7 +23,7 @@
     align-items: center;
 }
 
-.text-item {
+.adv-photo__text {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;

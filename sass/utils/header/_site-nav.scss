@@ -20,7 +20,7 @@
         padding-top: 32px;
         padding-bottom: 32px;
 
-        color: var(--main-text-color);
+        color: $mainTextColor;
 
         font-weight: 500;
         font-size: 14px;
@@ -31,7 +31,7 @@
 
 .navigation__link--active {
     position: relative;
-    color: var(--accent-color);
+    color: $accentColor;
 
     &::after {
         content: '';
@@ -42,7 +42,7 @@
 
         height: 4px;
         width: 100%;
-        background: var(--accent-color);
+        background: $accentColor;
         border-radius: 2px;
     }
 }

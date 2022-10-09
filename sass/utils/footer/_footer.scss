@@ -1,5 +1,5 @@
 .footer {
-    background-color: var(--second-background-color);
+    background-color: $secondBackgroundColor;
 
     padding-top: 60px;
     padding-bottom: 60px;
@@ -23,7 +23,7 @@
         letter-spacing: 0.03em;
         font-style: normal;
 
-        color: var(--second-logo-color);
+        color: $secondLogoColor;
     }
 
     &__link {
@@ -52,7 +52,7 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
 
-        color: var(--second-logo-color);
+        color: $secondLogoColor;
     }
 
     &__mail {
@@ -72,10 +72,10 @@
         letter-spacing: 0.03em;
 
         color: rgba(255, 255, 255, 0.6);
-        background-color: var(--second-background-color);
+        background-color: $secondBackgroundColor;
         border: 1px solid rgba(255, 255, 255, 0.3);
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-        border-radius: var(--main-border-radius);
+        border-radius: $mainBorderRadius;
     }
 
     &__btn {
@@ -92,18 +92,18 @@
 
         border: none;
         cursor: pointer;
-        color: var(--second-logo-color);
-        background-color: var(--accent-color);
-        border-radius: var(--main-border-radius);
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        color: $secondLogoColor;
+        background-color: $accentColor;
+        border-radius: $mainBorderRadius;
+        box-shadow: $mainBoxShadow;
 
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: background-color $mainTransition;
     }
 
     &__btn:hover,
     &__btn:focus,
     &__btn:active {
-        background-color: var(--big-btn-hover-color);
+        background-color: $bigBtnHoverColor;
     }
 
     &__btn::after {

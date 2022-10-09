@@ -7,8 +7,7 @@
     background-color: rgba(0, 0, 0, 0.2);
 
     opacity: 1;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity $mainTransition, visibility $mainTransition;
 }
 
 .backdrop.is-hidden {
@@ -33,12 +32,12 @@
     min-width: 530px;
     min-height: 580px;
 
-    background-color: var(--second-logo-color);
+    background-color: $secondLogoColor;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: var(--main-border-radius);
+    border-radius: $mainBorderRadius;
 
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform $mainTransition;
 
     &__close-btn {
         position: absolute;
@@ -51,7 +50,7 @@
         border: 1px solid rgba(0, 0, 0, 0.1);
         cursor: pointer;
 
-        background-color: var(--second-logo-color);
+        background-color: $secondLogoColor;
     }
 
     &__close-img {
@@ -59,13 +58,13 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        fill: var(--main-text-color);
-        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        fill: $mainTextColor;
+        transition: fill $mainTransition;
     }
 
     &__close-btn:hover svg,
     &__close-btn:focus svg {
-        fill: var(--accent-color);
+        fill: $accentColor;
     }
 
     &__title {
@@ -77,7 +76,7 @@
         line-height: 1.15;
         letter-spacing: 0.03em;
 
-        color: var(--main-text-color);
+        color: $mainTextColor;
     }
 
     &__submit {
@@ -95,24 +94,19 @@
 
         border: none;
         cursor: pointer;
-        color: var(--second-logo-color);
-        background-color: var(--accent-color);
-        border-radius: var(--main-border-radius);
+        color: $secondLogoColor;
+        background-color: $accentColor;
+        border-radius: $mainBorderRadius;
 
-        transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
-            background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: box-shadow $mainTransition, background-color $mainTransition;
     }
 
     &__submit:hover,
     &__submit:focus,
     &__submit:active {
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        background-color: var(--big-btn-hover-color);
+        box-shadow: $mainBoxShadow;
+        background-color: $bigBtnHoverColor;
     }
-}
-
-.no-scroll {
-    overflow: hidden;
 }
 
 .form {
@@ -133,7 +127,7 @@
         line-height: 1.17;
         letter-spacing: 0.01em;
 
-        color: var(--second-text-color);
+        color: $secondTextColor;
     }
 
     &__input {
@@ -141,10 +135,10 @@
         height: 40px;
         padding-left: 42px;
         border: 1px solid rgba(33, 33, 33, 0.2);
-        border-radius: var(--main-border-radius);
+        border-radius: $mainBorderRadius;
         outline: none;
 
-        transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: border $mainTransition;
     }
 
     &__ico {
@@ -153,17 +147,17 @@
         left: 12px;
         transform: translateY(-50%);
 
-        fill: var(--main-text-color);
+        fill: $mainTextColor;
 
-        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: fill $mainTransition;
     }
 
     &__input:focus-visible {
-        border: 1px solid var(--accent-color);
+        border: 1px solid $accentColor;
     }
 
     &__input:focus-visible + svg {
-        fill: var(--accent-color);
+        fill: $accentColor;
     }
 
     &__input--comment {
@@ -190,7 +184,7 @@
         line-height: 1.7;
         letter-spacing: 0.03em;
 
-        color: var(--second-text-color);
+        color: $secondTextColor;
     }
 
     &__link {
@@ -200,7 +194,7 @@
         letter-spacing: 0.03em;
         text-decoration-line: underline;
 
-        color: var(--accent-color);
+        color: $accentColor;
 
         margin-left: 3px;
     }
@@ -212,17 +206,20 @@
 
         height: 15px;
         width: 16px;
-        border: 2px solid var(--main-text-color);
+        border: 2px solid $mainTextColor;
         border-radius: 2px;
 
         margin-right: 7px;
 
-        transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1),
-            border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: background $mainTransition, border $mainTransition;
     }
 }
 
 .submit input:checked + label .submit__checkbox {
-    background: var(--accent-color);
+    background: $accentColor;
     border: none;
+}
+
+.no-scroll {
+    overflow: hidden;
 }

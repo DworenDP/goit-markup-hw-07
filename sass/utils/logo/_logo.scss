@@ -5,13 +5,13 @@
     line-height: 1.19;
     letter-spacing: 0.03em;
 
-    color: var(--accent-color);
+    color: $accentColor;
 
     &__item {
-        color: var(--second-accent-color);
+        color: $secondAccentColor;
     }
 
     &__item--inverse {
-        color: var(--second-logo-color);
+        color: $secondLogoColor;
     }
 }

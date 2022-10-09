@@ -42,9 +42,10 @@
     margin-left: 32px;
 
     &__ico {
+        @include size(44px, 44px);
+
         display: flex;
-        width: 44px;
-        height: 44px;
+
         border-radius: 50%;
 
         background: $secondLogoColor;

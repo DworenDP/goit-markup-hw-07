@@ -68,18 +68,19 @@
     }
 
     &__title {
+        @include font(20px, 1.15, 0.03em);
+
         text-align: center;
         margin-bottom: 12px;
 
         font-weight: 700;
-        font-size: 20px;
-        line-height: 1.15;
-        letter-spacing: 0.03em;
 
         color: $mainTextColor;
     }
 
     &__submit {
+        @include font(16px, 2.38, 0.06em);
+
         display: block;
 
         padding: 10px 52px;
@@ -88,9 +89,6 @@
         margin-right: auto;
 
         font-weight: 700;
-        font-size: 16px;
-        line-height: 2.38;
-        letter-spacing: 0.06em;
 
         border: none;
         cursor: pointer;
@@ -121,11 +119,9 @@
     }
 
     &__label {
-        margin-bottom: 4px;
+        @include font(12px, 1.17, 0.01em);
 
-        font-size: 12px;
-        line-height: 1.17;
-        letter-spacing: 0.01em;
+        margin-bottom: 4px;
 
         color: $secondTextColor;
     }
@@ -188,10 +184,8 @@
     }
 
     &__link {
-        font-size: 14px;
-        line-height: 1.71;
+        @include font(14px, 1.71, 0.03em);
 
-        letter-spacing: 0.03em;
         text-decoration-line: underline;
 
         color: $accentColor;

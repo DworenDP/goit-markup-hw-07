@@ -706,7 +706,7 @@ textarea {
   margin-top: 20px;
 }
 .address__geo {
-  font-size: 14px;
+  @in font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   font-style: normal;

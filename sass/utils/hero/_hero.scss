@@ -12,11 +12,10 @@
     background-size: cover;
 
     &__title {
+        @include font(44px, 1.36, 0.06em);
         font-weight: 900;
-        font-size: 44px;
-        line-height: 1.36;
         text-align: center;
-        letter-spacing: 0.06em;
+
         text-transform: uppercase;
 
         color: $secondLogoColor;
@@ -27,13 +26,11 @@
     }
 
     &__btn {
+        @include font(16px, 1.88, 0.06em);
         font-family: inherit;
         background-color: $accentColor;
         font-weight: 700;
-        font-size: 16px;
-        line-height: 1.88;
         text-align: center;
-        letter-spacing: 0.06em;
 
         color: $secondLogoColor;
 

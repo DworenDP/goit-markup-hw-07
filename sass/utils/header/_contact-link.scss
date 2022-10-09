@@ -12,6 +12,8 @@
     }
 
     &__link {
+        @include font(14px, 1.15, 0.02em);
+
         display: flex;
         align-items: center;
         padding-top: 32px;
@@ -20,9 +22,6 @@
         color: $secondTextColor;
 
         font-weight: 500;
-        font-size: 14px;
-        line-height: 1.15;
-        letter-spacing: 0.02em;
     }
 
     &__item + &__item {

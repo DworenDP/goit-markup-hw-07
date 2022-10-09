@@ -20,19 +20,16 @@
     }
 
     &__name {
+        @include font(16px, 1.19, 0.03em);
         font-weight: 500;
-        font-size: 16px;
-        line-height: 1.19;
         text-align: center;
-        letter-spacing: 0.03em;
+
         margin-bottom: 10px;
     }
 
     &__profession {
-        font-size: 16px;
-        line-height: 1.19;
+        @include font(16px, 1.19, 0.03em);
         text-align: center;
-        letter-spacing: 0.03em;
 
         color: $secondTextColor;
 
@@ -76,11 +73,11 @@
     }
 
     &__text {
+        @include font(14px, 1.14, 0.03em);
+
         margin-bottom: 20px;
+
         font-weight: 700;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.03em;
         text-transform: uppercase;
 
         color: $secondLogoColor;

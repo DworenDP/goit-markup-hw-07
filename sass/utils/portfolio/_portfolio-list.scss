@@ -4,10 +4,9 @@
     gap: 30px;
 
     &__title {
+        @include font(18px, 2, 0.06em);
+
         font-weight: 700;
-        font-size: 18px;
-        line-height: 2;
-        letter-spacing: 0.06em;
 
         color: $mainTextColor;
 
@@ -15,10 +14,9 @@
     }
 
     &__type {
+        @include font(16px, 1.88, 0.03em);
+
         font-weight: 400;
-        font-size: 16px;
-        line-height: 1.88;
-        letter-spacing: 0.03em;
 
         color: $secondTextColor;
     }
@@ -54,6 +52,8 @@
     }
 
     &__text {
+        @include font(18px, 1.6, 0.03em);
+
         position: absolute;
         top: 0;
         left: 0;
@@ -64,9 +64,6 @@
         padding-left: 24px;
 
         background: $portfolioWrapColor;
-        font-size: 18px;
-        line-height: 1.6;
-        letter-spacing: 0.03em;
         color: $secondLogoColor;
 
         transform: translateY(100%);

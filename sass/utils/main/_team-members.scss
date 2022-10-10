@@ -69,21 +69,6 @@
         background: $accentColor;
     }
 
-    &--margin-left {
-        margin-left: 70px;
-    }
-
-    &__text {
-        @include font(14px, 1.14, 0.03em);
-
-        margin-bottom: 20px;
-
-        font-weight: 700;
-        text-transform: uppercase;
-
-        color: $secondLogoColor;
-    }
-
     &__item + &__item {
         margin-left: 10px;
     }
